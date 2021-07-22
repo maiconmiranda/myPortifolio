@@ -109,3 +109,14 @@ p {
 .link-button button {
   font-size: 3rem;
 }
+
+/* contact  */
+#contact {
+  background: var(--background-secondary);
+}
+
+.form--container {
+  max-width: 600px;
+  padding: 0 1rem;
+  margin-inline: auto;
+}
