@@ -30,11 +30,24 @@ body {
   margin: 5rem 0;
 }
 
+.margin-large {
+  margin: 8rem 0;
+}
+
+.display--center {
+  display: flex;
+  justify-content: center;
+}
+
 /* typograph */
 
 p {
   /* font-size: 2rem; */
   opacity: 0.8;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 .center {
@@ -139,6 +152,7 @@ p {
 .code-block {
   max-width: 900px;
   overflow-x: auto;
+  margin: 8rem 0;
 }
 
 .language {
@@ -160,7 +174,7 @@ p {
   border-radius: 0 0 5px 5px;
 }
 
-.copy__button {
+/* .copy__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -194,8 +208,15 @@ p {
 
 .copy__success.show-message {
   display: inline-block;
-}
+} */
 
 .hljs {
   background: transparent !important;
+}
+
+/* footer  */
+.footer--link {
+  text-decoration: none;
+  color: var(--color-variant);
+  opacity: 0.5;
 }
