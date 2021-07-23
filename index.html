@@ -241,7 +241,7 @@ function heatTheWater(water) {
   } else if (water.quantity > 200) {
     console.log("Too much water. Water level must be 200")
     return false
-  } else if (water.temperature >= 96) {
+  } else if (water.temperature > 96) {
     console.log("cooling down the water")
     water.temperature = 96
     return heatTheWater(water)

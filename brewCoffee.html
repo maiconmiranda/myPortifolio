@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maicon Portifolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,6 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./highlightjs/dracula.css" />
+    <script src="brewCoffee.js" defer></script>
+    <title>Maicon Portifolio</title>
   </head>
   <body>
     <!-- navbar -->
@@ -107,8 +109,8 @@
               <h3>Step 4</h3>
               <img src="./images/coffee Page/hot-water.png" alt="" />
               <p>
-                And heat the water. Not boil, the right temperature is 96 degrees
-                celsius.
+                And heat the water. Not boil, the right temperature is 96
+                degrees celsius.
               </p>
             </div>
             <div class="col">
@@ -125,8 +127,6 @@
         </div>
       </article>
     </section>
-
-    <!-- pseudocode -->
 
     <section class="pseudocode">
       <div class="container">
@@ -153,8 +153,13 @@
             "
           >
             <div class="ms-2 me-auto">
-              <div class="fw-bold">1. Check if the coffee machine has cofee coffee beans</div>
-              if has coffee beans and the coffee beans is the right amount <br> return true <br> else reuturn false
+              <div class="fw-bold">
+                1. Check if the coffee machine has cofee coffee beans
+              </div>
+              if has coffee beans and the coffee beans is the right amount
+              <br />
+              return true <br />
+              else reuturn false
             </div>
           </li>
           <li
@@ -167,7 +172,11 @@
           >
             <div class="ms-2 me-auto">
               <div class="fw-bold">2. Check if the level of water is right</div>
-              if the level of water is "x" and the temperature is "c" return true <br> else if the water level is below "x" return false and message <br> else if the water level is above "x" return false and message 
+              if the level of water is "x" and the temperature is "c" return
+              true <br />
+              else if the water level is below "x" return false and message
+              <br />
+              else if the water level is above "x" return false and message
             </div>
           </li>
           <li
@@ -179,11 +188,17 @@
             "
           >
             <div class="ms-2 me-auto">
-              <div class="fw-bold">3. Check if the water temperature is 96 degrees celsius</div>
-              if the water temperature is 96 deg return true <br> else if the water temperature is above 96 degress return false and message, return to the beginning of the statement. <br> if water temperature if below 96 deg return false, message, and heat to the right temperature.
+              <div class="fw-bold">
+                3. Check if the water temperature is 96 degrees celsius
+              </div>
+              if the water temperature is 96 deg return true <br />
+              else if the water temperature is above 96 degress return false and
+              message, return to the beginning of the statement. <br />
+              if water temperature if below 96 deg return false, message, and
+              heat to the right temperature.
             </div>
           </li>
-          </li>
+
           <li
             class="
               list-group-item
@@ -194,43 +209,258 @@
           >
             <div class="ms-2 me-auto">
               <div class="fw-bold">4. check if the coffee ig grindede</div>
-              if the coffee if grinded return true <br> else return false
+              if the coffee if grinded return true <br />
+              else return false
             </div>
           </li>
         </ol>
-        <p>The above example is just a simple and brief example about pseudocode. As you can see the logic is based on true and false statements</p>
+        <p>
+          The above example is just a simple and brief example about pseudocode.
+          As you can see the logic is based on true and false statements
+        </p>
       </div>
     </section>
 
-    <!-- Javascript code  -->
     <article class="js-code">
-        <div class="container">
-            <h2 class="topic-heading">
-      <span class="brackets">{</span>Javascript code<span class="brackets"
-        >}</span
-      >
-    </h2>
-    <p>Now comes the fun part. Lest's write the Javascript code to run the machine's logic. Here we will keep it very simple and basic</p>
-    <div class="code-block">
-        <p class="language">
-            Javascript 
+      <div class="container">
+        <h2 class="topic-heading">
+          <span class="brackets">{</span>Javascript code<span class="brackets"
+            >}</span
+          >
+        </h2>
+        <p>
+          Now comes the fun part. Lest's write the Javascript code to run the
+          machine's logic. Here we will keep it very simple and basic
         </p>
+      </div>
+    </article>
+    <article class="container">
+      <!-- block code 0 -->
+      <div class="code--paragraph">
+        <p>
+          First we declare two variables. Variables in programming are names
+          used to hold values. In the example below the first variable called
+          <span class="fw-bold fst-italic text-warning">coffeeGrain</span>
+          holds a value of <span class="fw-bold fst-italic text-info">10</span>,
+          which means that is the rigth amout of coffee grain for the machine
+        </p>
+        <p>
+          The second variable is an
+          <span class="fw-bold fst-italic text-warning">object</span>. Object in
+          Javascript contains properties like a car, where has color, weight and
+          so on. The variable called
+          <span class="fw-bold fst-italic text-warning">glassOfWater</span>,
+          contains two properties: quantity, measures the amout of water, in
+          this case the value is
+          <span class="fw-bold fst-italic text-info">200</span>, and
+          temperature, which is
+          <span class="fw-bold fst-italic text-info">96deg</span>
+        </p>
+      </div>
+      <div class="container code-block">
+        <p class="language">Javascript</p>
         <div class="code__wrapper">
-            <pre>
-                <code id="code">
+          <pre>
+            <code id="code">
 let coffeeGrain = 10
 const glassOfWater = {
- quantity: 200,
- temperature: 99
+quantity: 200,
+temperature: 99
 }
-                </code>
-            </pre>
-            <button id="copy__button">Copy</button>
+            </code>
+        </pre>
         </div>
-        <span id="copy__success" > Code Copied! 👍</span>
-    </div>
-</div>
-     
+      </div>
+      <!-- end of block code 0-->
+
+      <!-- block code 1-->
+      <div class="code--paragraph">
+        <p>
+          Below we have a
+          <span class="fw-bold fst-italic text-warning">function</span>.
+          Functions are a set of statements that performs a task. The task that
+          the function below performs is to check if the variable called
+          coffeeGrain contains the rigth amount, then returns true. In other
+          words, if the amout of coffeeGrain is 10, return true to turn on the
+          grinder.
+        </p>
+        <p>
+          Inside the function,
+          <span class="fw-bold fst-italic text-warning">switch</span> statement
+          is been used, in which if the first case is false the program will
+          look for the next until reaches the last option. The
+          <span class="fw-bold fst-italic text-warning">default</span> option
+          runs if any of other cases don't matches the condition.
+        </p>
+      </div>
+      <div class="container code-block">
+        <p class="language">Javascript</p>
+        <div class="code__wrapper">
+          <pre>
+            <code id="code1">
+function turnOnTheGrinder(coffeeGrain) {
+  switch (true) {
+    case (coffeeGrain === 10):
+      return true
+      break;
+    case (coffeeGrain < 10):
+      console.log("add more grains")
+      return false
+      break;
+    case (coffeeGrain > 10):
+      console.log("please remove grain")
+      return false
+      break;
+    default:
+      return false
+  }
+  
+}
+            </code>
+        </pre>
+        </div>
+      </div>
+      <!-- end of block code 1 -->
+
+      <!-- block code 2-->
+      <div class="code--paragraph">
+        <p>
+          The next block of code we have a function that is going to check the
+          water and temperature. Using the variables that were assingned in the
+          beginning, checks if the water level is the right one using
+          <span class="fw-bold fst-italic text-warning"
+            >comparison operators</span
+          >. Comparison operators, compares two values and return true if the
+          comparison match. As the first example below, if the quantity of water
+          (<span class="fw-bold fst-italic text-warning">water.quantity</span>)
+          is equal <span class="fw-bold fst-italic text-info">200</span>, by the
+          equality operator
+          <span class="fw-bold fst-italic text-warning">===</span>, "and" using
+          the operator
+          <span class="fw-bold fst-italic text-warning">&&</span> if the water
+          temperature (<span class="fw-bold fst-italic text-warning"
+            >water.temperature</span
+          >) is equal
+          <span class="fw-bold fst-italic text-info">96</span> return true.
+        </p>
+        <p>
+          As you can see we check all the possible conditions to avoid any crack
+          in our software.
+        </p>
+      </div>
+      <div class="container code-block">
+        <p class="language">Javascript</p>
+        <div class="code__wrapper">
+          <pre>
+            <code id="code2">
+function heatTheWater(water) {
+  // let result = false
+  if (water.quantity === 200 && water.temperature === 96) {
+      return true
+  } else if (water.quantity < 200 && water.quantity > 0) {
+      console.log("Please add more water")
+      return false
+  } else if (water.quantity < 0) {
+      console.log("Invalid input. water level cannot be below 0")
+      return false
+  } else if (water.quantity > 200) {
+      console.log("Too much water. Water level must be 200")
+      return false
+  } else if (water.temperature > 96) {
+      console.log("cooling down the water")
+      water.temperature = 96
+      return heatTheWater(water)
+  } else if (water.temperature < 96) {
+      console.log("heating the water")
+      water.temperature = 96
+      return heatTheWater(water)
+  } else {
+      console.log("Error. Check the machine")
+      return false
+  }
+} 
+            </code>
+        </pre>
+        </div>
+      </div>
+      <!-- end of block code 2  -->
+
+      <!-- block code  3 -->
+      <div class="code--paragraph">
+        <p>
+          It is time to put all this logic togheter in one function called
+          <span class="fw-bold fst-italic text-warning">brewCoffee()</span>.
+          Once this function is called will call the other functions and check
+          the grinder, water and temperature, if all of these returns true, then
+          our coffee is ready. If any of these functions return false we will be
+          able to know which one and the issue, unless any issue that is not
+          added in the functions.
+        </p>
+        <p>
+          The
+          <span class="fw-bold fst-italic text-warning">brewCoffee()</span>
+          function takes to parameters, the amount of coffee beans and the
+          water. then calls the function
+          <span class="fw-bold fst-italic text-warning">heatTheWater()</span>
+          and
+          <span class="fw-bold fst-italic text-warning">brewCoffee()</span>.
+          Then stores the result in a local variables inside the function. Next
+          compares the result, if all true, 👍, if not returns false and error
+          message.
+        </p>
+      </div>
+      <div class="container code-block">
+        <p class="language">Javascript</p>
+        <div class="code__wrapper">
+          <pre>
+            <code id="code3">
+function brewCoffee(coffeeGrain, glassOfWater) {
+  let coffeeIsGrinded = turnOnTheGrinder(coffeeGrain)
+  let waterIsHeated = heatTheWater(glassOfWater)
+    if (coffeeIsGrinded && waterIsHeated) {
+     return "your coffee is ready! ☕️"
+    } else if (!coffeeIsGrinded) {
+      console.log("check grinder")
+    } else if (!waterIsHeated) {
+      return waterIsHeated
+    } else {
+        return "Error. please check the machine"
+    }
+}
+            </code>
+        </pre>
+        </div>
+      </div>
+      <!-- end of block code 3 -->
+
+      <!-- block code 4 -->
+      <div class="code--paragraph">
+        <p>
+          And for the last. we create a variable called
+          <span class="fw-bold fst-italic text-warning">bringMeCofee</span>,
+          this variable is going to call the
+          <span class="fw-bold fst-italic text-warning">brewCoffee()</span>. In
+          other words is the varible that is going to turn on the machine.
+        </p>
+        <p>
+          The
+          <span class="fw-bold fst-italic text-warning">console.log()</span> is
+          a function used to print the results to the console. And is most
+          usefull for testing purpose
+        </p>
+      </div>
+      <div class="container code-block">
+        <p class="language">Javascript</p>
+        <div class="code__wrapper">
+          <pre>
+            <code id="code4">
+const bringMeCofee = brewCoffee(coffeeGrain, glassOfWater)
+console.log(bringMeCofee)
+            </code>
+        </pre>
+        </div>
+      </div>
+      <!-- end of block code  4-->
     </article>
 
     <script
@@ -238,6 +468,7 @@ const glassOfWater = {
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   </body>
 </html>
 
